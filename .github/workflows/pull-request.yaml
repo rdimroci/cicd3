@@ -1,0 +1,11 @@
+name: PR Workflow
+
+on:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tests on PR
+        run: echo "Running tests for pull request..."

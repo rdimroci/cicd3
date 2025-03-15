@@ -1,0 +1,14 @@
+name: Workflow B
+
+on:
+  workflow_run:
+    workflows: ["Workflow A"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Triggered by Workflow A
+        run: echo "Workflow B is running after Workflow A!"
