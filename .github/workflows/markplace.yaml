@@ -1,4 +1,4 @@
-name: Lint Code
+name: Lint Code2
 on: [push]
 jobs:
   lint:
