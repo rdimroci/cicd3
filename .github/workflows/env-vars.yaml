@@ -1,0 +1,13 @@
+name: Env Variables
+
+on: push
+
+jobs:
+  env-vars:
+    runs-on: ubuntu-latest
+    env:
+      GREETING: "Hello"
+      TARGET: "World"
+    steps:
+      - name: Print environment variables
+        run: echo "$GREETING, $TARGET!"
